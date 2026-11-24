@@ -1,0 +1,53 @@
+{
+ "p": 288,
+ "n_valid": 4000,
+ "n_repeats": 3,
+ "passes": 2,
+ "backend": "loky",
+ "machine": {
+  "python": "3.11.9",
+  "system": "Windows",
+  "release": "10",
+  "version": "10.0.26200",
+  "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+  "logical_cpus": 22,
+  "summary": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel, 22 logical CPUs, Windows 10 (build 10.0.26200), Python 3.11.9"
+ },
+ "rows": [
+  {
+   "workers": 1,
+   "seconds": 12.767,
+   "identical_to_serial": true,
+   "speedup": 1.0,
+   "efficiency": 1.0
+  },
+  {
+   "workers": 2,
+   "seconds": 7.129,
+   "identical_to_serial": true,
+   "speedup": 1.791,
+   "efficiency": 0.895
+  },
+  {
+   "workers": 4,
+   "seconds": 4.317,
+   "identical_to_serial": true,
+   "speedup": 2.957,
+   "efficiency": 0.739
+  },
+  {
+   "workers": 8,
+   "seconds": 2.675,
+   "identical_to_serial": true,
+   "speedup": 4.773,
+   "efficiency": 0.597
+  },
+  {
+   "workers": 16,
+   "seconds": 1.758,
+   "identical_to_serial": true,
+   "speedup": 7.262,
+   "efficiency": 0.454
+  }
+ ]
+}

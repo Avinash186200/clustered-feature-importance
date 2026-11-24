@@ -1,0 +1,190 @@
+{
+ "dev_seeds": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "clustering_tasks": 45,
+ "clustering_grid": {
+  "single/silhouette": {
+   "ari": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 45
+   },
+   "mean_k": 67.93
+  },
+  "single/tstat": {
+   "ari": {
+    "mean": 0.955709,
+    "se": 0.030961,
+    "n": 45
+   },
+   "mean_k": 66.69
+  },
+  "average/silhouette": {
+   "ari": {
+    "mean": 0.998869,
+    "se": 0.001131,
+    "n": 45
+   },
+   "mean_k": 66.87
+  },
+  "average/tstat": {
+   "ari": {
+    "mean": 0.88426,
+    "se": 0.046308,
+    "n": 45
+   },
+   "mean_k": 60.38
+  },
+  "complete/silhouette": {
+   "ari": {
+    "mean": 0.984532,
+    "se": 0.001905,
+    "n": 45
+   },
+   "mean_k": 54.38
+  },
+  "complete/tstat": {
+   "ari": {
+    "mean": 0.951822,
+    "se": 0.020548,
+    "n": 45
+   },
+   "mean_k": 45.64
+  },
+  "ward/silhouette": {
+   "ari": {
+    "mean": 0.969175,
+    "se": 0.002432,
+    "n": 45
+   },
+   "mean_k": 40.73
+  },
+  "ward/tstat": {
+   "ari": {
+    "mean": 0.974893,
+    "se": 0.002256,
+    "n": 45
+   },
+   "mean_k": 44.0
+  }
+ },
+ "chosen_cluster": {
+  "linkage": "single",
+  "criterion": "silhouette",
+  "k_max_frac": 0.5
+ },
+ "model_grid": [
+  {
+   "config": {
+    "num_leaves": 3,
+    "n_estimators": 100,
+    "learning_rate": 0.08,
+    "min_child_samples": 20,
+    "colsample_bytree": 0.5,
+    "reg_lambda": 1.0
+   },
+   "valid_r2": {
+    "mean": 0.151373,
+    "se": 0.005671,
+    "n": 5
+   }
+  },
+  {
+   "config": {
+    "num_leaves": 3,
+    "n_estimators": 300,
+    "learning_rate": 0.03,
+    "min_child_samples": 20,
+    "colsample_bytree": 0.5,
+    "reg_lambda": 1.0
+   },
+   "valid_r2": {
+    "mean": 0.151787,
+    "se": 0.005647,
+    "n": 5
+   }
+  },
+  {
+   "config": {
+    "num_leaves": 7,
+    "n_estimators": 100,
+    "learning_rate": 0.08,
+    "min_child_samples": 20,
+    "colsample_bytree": 0.5,
+    "reg_lambda": 1.0
+   },
+   "valid_r2": {
+    "mean": 0.154757,
+    "se": 0.006371,
+    "n": 5
+   }
+  },
+  {
+   "config": {
+    "num_leaves": 7,
+    "n_estimators": 300,
+    "learning_rate": 0.03,
+    "min_child_samples": 20,
+    "colsample_bytree": 0.5,
+    "reg_lambda": 1.0
+   },
+   "valid_r2": {
+    "mean": 0.15702,
+    "se": 0.004478,
+    "n": 5
+   }
+  },
+  {
+   "config": {
+    "num_leaves": 15,
+    "n_estimators": 100,
+    "learning_rate": 0.08,
+    "min_child_samples": 20,
+    "colsample_bytree": 0.5,
+    "reg_lambda": 1.0
+   },
+   "valid_r2": {
+    "mean": 0.143996,
+    "se": 0.007248,
+    "n": 5
+   }
+  },
+  {
+   "config": {
+    "num_leaves": 15,
+    "n_estimators": 300,
+    "learning_rate": 0.03,
+    "min_child_samples": 20,
+    "colsample_bytree": 0.5,
+    "reg_lambda": 1.0
+   },
+   "valid_r2": {
+    "mean": 0.152422,
+    "se": 0.005099,
+    "n": 5
+   }
+  }
+ ],
+ "model_rule": "cheapest setting within one s.e. of the best mean validation R^2",
+ "best_model_by_mean": {
+  "num_leaves": 7,
+  "n_estimators": 300,
+  "learning_rate": 0.03,
+  "min_child_samples": 20,
+  "colsample_bytree": 0.5,
+  "reg_lambda": 1.0
+ },
+ "chosen_model": {
+  "num_leaves": 7,
+  "n_estimators": 100,
+  "learning_rate": 0.08,
+  "min_child_samples": 20,
+  "colsample_bytree": 0.5,
+  "reg_lambda": 1.0
+ }
+}

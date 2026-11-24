@@ -1,0 +1,2168 @@
+{
+ "heldout_seeds": [
+  101,
+  102,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108
+ ],
+ "k": 8,
+ "r2_latent": 0.25,
+ "n_repeats": 3,
+ "cells": [
+  {
+   "rho": 0.5,
+   "noise_frac": 0.25,
+   "methods": {
+    "MDI": {
+     "rank_corr": {
+      "mean": 0.643724,
+      "se": 0.053976,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.469132,
+      "se": 0.031257,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.515625,
+      "se": 0.036881,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.015625,
+      "se": 0.015625,
+      "n": 8
+     }
+    },
+    "MDA": {
+     "rank_corr": {
+      "mean": 0.615281,
+      "se": 0.093179,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.323649,
+      "se": 0.050677,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.640625,
+      "se": 0.036881,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.015625,
+      "se": 0.015625,
+      "n": 8
+     }
+    },
+    "SHAP": {
+     "rank_corr": {
+      "mean": 0.586837,
+      "se": 0.039978,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.415802,
+      "se": 0.02804,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.5625,
+      "se": 0.040916,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.03125,
+      "se": 0.020458,
+      "n": 8
+     }
+    },
+    "cMDI": {
+     "rank_corr": {
+      "mean": 0.643724,
+      "se": 0.053976,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.824523,
+      "se": 0.036635,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.96875,
+      "se": 0.020458,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.03125,
+      "se": 0.020458,
+      "n": 8
+     }
+    },
+    "cMDA": {
+     "rank_corr": {
+      "mean": 0.730552,
+      "se": 0.055486,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.869652,
+      "se": 0.026628,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.90625,
+      "se": 0.020458,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.09375,
+      "se": 0.020458,
+      "n": 8
+     }
+    },
+    "cSHAP": {
+     "rank_corr": {
+      "mean": 0.573363,
+      "se": 0.035458,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.79291,
+      "se": 0.028593,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.953125,
+      "se": 0.022873,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.046875,
+      "se": 0.022873,
+      "n": 8
+     }
+    },
+    "MDA+dedupe": {
+     "recall_at_k": {
+      "mean": 0.9375,
+      "se": 0.033408,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.0625,
+      "se": 0.033408,
+      "n": 8
+     }
+    }
+   },
+   "downstream": {
+    "8": {
+     "MDI": {
+      "mean": 0.091257,
+      "se": 0.003399,
+      "n": 8
+     },
+     "MDA": {
+      "mean": 0.08433,
+      "se": 0.006676,
+      "n": 8
+     },
+     "SHAP": {
+      "mean": 0.085657,
+      "se": 0.003126,
+      "n": 8
+     },
+     "cMDI": {
+      "mean": 0.069529,
+      "se": 0.003967,
+      "n": 8
+     },
+     "cMDA": {
+      "mean": 0.065204,
+      "se": 0.004161,
+      "n": 8
+     },
+     "cSHAP": {
+      "mean": 0.067565,
+      "se": 0.004659,
+      "n": 8
+     },
+     "cMDA, cluster means": {
+      "mean": 0.144527,
+      "se": 0.003376,
+      "n": 8
+     },
+     "MDA+dedupe": {
+      "mean": 0.072955,
+      "se": 0.004341,
+      "n": 8
+     },
+     "random": {
+      "mean": 0.034198,
+      "se": 0.003638,
+      "n": 8
+     }
+    }
+   },
+   "downstream_all_features": {
+    "mean": 0.135787,
+    "se": 0.00353,
+    "n": 8
+   },
+   "downstream_oracle_factors": {
+    "mean": 0.175083,
+    "se": 0.005768,
+    "n": 8
+   },
+   "ari": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 8
+   },
+   "valid_r2_all": {
+    "mean": 0.135388,
+    "se": 0.008378,
+    "n": 8
+   },
+   "found_clusters": {
+    "mean": 24.125,
+    "se": 1.007782,
+    "n": 8
+   },
+   "p": {
+    "mean": 83.0,
+    "se": 3.570714,
+    "n": 8
+   },
+   "n_groups": {
+    "mean": 24.125,
+    "se": 1.007782,
+    "n": 8
+   },
+   "n_noise_features": {
+    "mean": 20.75,
+    "se": 0.920985,
+    "n": 8
+   }
+  },
+  {
+   "rho": 0.5,
+   "noise_frac": 0.5,
+   "methods": {
+    "MDI": {
+     "rank_corr": {
+      "mean": 0.64073,
+      "se": 0.061025,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.567753,
+      "se": 0.018062,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.5,
+      "se": 0.023623,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.0,
+      "se": 0.0,
+      "n": 8
+     }
+    },
+    "MDA": {
+     "rank_corr": {
+      "mean": 0.802409,
+      "se": 0.043181,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.376875,
+      "se": 0.02606,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.53125,
+      "se": 0.03125,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.03125,
+      "se": 0.020458,
+      "n": 8
+     }
+    },
+    "SHAP": {
+     "rank_corr": {
+      "mean": 0.538932,
+      "se": 0.037669,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.540273,
+      "se": 0.019558,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.453125,
+      "se": 0.032882,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.0,
+      "se": 0.0,
+      "n": 8
+     }
+    },
+    "cMDI": {
+     "rank_corr": {
+      "mean": 0.64073,
+      "se": 0.061025,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.866738,
+      "se": 0.014224,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.9375,
+      "se": 0.033408,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.0625,
+      "se": 0.033408,
+      "n": 8
+     }
+    },
+    "cMDA": {
+     "rank_corr": {
+      "mean": 0.657197,
+      "se": 0.058032,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.85004,
+      "se": 0.016047,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.90625,
+      "se": 0.020458,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.09375,
+      "se": 0.020458,
+      "n": 8
+     }
+    },
+    "cSHAP": {
+     "rank_corr": {
+      "mean": 0.534441,
+      "se": 0.041173,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.855771,
+      "se": 0.011694,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.90625,
+      "se": 0.03125,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.09375,
+      "se": 0.03125,
+      "n": 8
+     }
+    },
+    "MDA+dedupe": {
+     "recall_at_k": {
+      "mean": 0.8125,
+      "se": 0.023623,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.1875,
+      "se": 0.023623,
+      "n": 8
+     }
+    }
+   },
+   "downstream": {
+    "8": {
+     "MDI": {
+      "mean": 0.091096,
+      "se": 0.00336,
+      "n": 8
+     },
+     "MDA": {
+      "mean": 0.082855,
+      "se": 0.006695,
+      "n": 8
+     },
+     "SHAP": {
+      "mean": 0.090899,
+      "se": 0.00458,
+      "n": 8
+     },
+     "cMDI": {
+      "mean": 0.063257,
+      "se": 0.003026,
+      "n": 8
+     },
+     "cMDA": {
+      "mean": 0.061009,
+      "se": 0.002253,
+      "n": 8
+     },
+     "cSHAP": {
+      "mean": 0.061436,
+      "se": 0.003417,
+      "n": 8
+     },
+     "cMDA, cluster means": {
+      "mean": 0.143009,
+      "se": 0.003924,
+      "n": 8
+     },
+     "MDA+dedupe": {
+      "mean": 0.068119,
+      "se": 0.006006,
+      "n": 8
+     },
+     "random": {
+      "mean": 0.018759,
+      "se": 0.006824,
+      "n": 8
+     }
+    }
+   },
+   "downstream_all_features": {
+    "mean": 0.133006,
+    "se": 0.003432,
+    "n": 8
+   },
+   "downstream_oracle_factors": {
+    "mean": 0.172861,
+    "se": 0.003764,
+    "n": 8
+   },
+   "ari": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 8
+   },
+   "valid_r2_all": {
+    "mean": 0.122996,
+    "se": 0.008971,
+    "n": 8
+   },
+   "found_clusters": {
+    "mean": 46.125,
+    "se": 2.2869,
+    "n": 8
+   },
+   "p": {
+    "mean": 124.5,
+    "se": 5.301617,
+    "n": 8
+   },
+   "n_groups": {
+    "mean": 46.125,
+    "se": 2.2869,
+    "n": 8
+   },
+   "n_noise_features": {
+    "mean": 62.25,
+    "se": 2.650809,
+    "n": 8
+   }
+  },
+  {
+   "rho": 0.5,
+   "noise_frac": 0.75,
+   "methods": {
+    "MDI": {
+     "rank_corr": {
+      "mean": 0.588334,
+      "se": 0.059514,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.45247,
+      "se": 0.01826,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.5,
+      "se": 0.033408,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.015625,
+      "se": 0.015625,
+      "n": 8
+     }
+    },
+    "MDA": {
+     "rank_corr": {
+      "mean": 0.577855,
+      "se": 0.066441,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.351524,
+      "se": 0.038078,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.546875,
+      "se": 0.052491,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.0,
+      "se": 0.0,
+      "n": 8
+     }
+    },
+    "SHAP": {
+     "rank_corr": {
+      "mean": 0.538932,
+      "se": 0.05854,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.437679,
+      "se": 0.018142,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.5625,
+      "se": 0.033408,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.03125,
+      "se": 0.020458,
+      "n": 8
+     }
+    },
+    "cMDI": {
+     "rank_corr": {
+      "mean": 0.588334,
+      "se": 0.059514,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.710645,
+      "se": 0.012642,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.84375,
+      "se": 0.03125,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.15625,
+      "se": 0.03125,
+      "n": 8
+     }
+    },
+    "cMDA": {
+     "rank_corr": {
+      "mean": 0.642227,
+      "se": 0.069204,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.70424,
+      "se": 0.025666,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.890625,
+      "se": 0.028323,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.109375,
+      "se": 0.028323,
+      "n": 8
+     }
+    },
+    "cSHAP": {
+     "rank_corr": {
+      "mean": 0.497015,
+      "se": 0.055945,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.704167,
+      "se": 0.014676,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.8125,
+      "se": 0.033408,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.1875,
+      "se": 0.033408,
+      "n": 8
+     }
+    },
+    "MDA+dedupe": {
+     "recall_at_k": {
+      "mean": 0.734375,
+      "se": 0.049762,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.265625,
+      "se": 0.049762,
+      "n": 8
+     }
+    }
+   },
+   "downstream": {
+    "8": {
+     "MDI": {
+      "mean": 0.096016,
+      "se": 0.002674,
+      "n": 8
+     },
+     "MDA": {
+      "mean": 0.093585,
+      "se": 0.003604,
+      "n": 8
+     },
+     "SHAP": {
+      "mean": 0.097848,
+      "se": 0.00364,
+      "n": 8
+     },
+     "cMDI": {
+      "mean": 0.066964,
+      "se": 0.004426,
+      "n": 8
+     },
+     "cMDA": {
+      "mean": 0.068739,
+      "se": 0.003802,
+      "n": 8
+     },
+     "cSHAP": {
+      "mean": 0.064783,
+      "se": 0.002869,
+      "n": 8
+     },
+     "cMDA, cluster means": {
+      "mean": 0.148789,
+      "se": 0.006712,
+      "n": 8
+     },
+     "MDA+dedupe": {
+      "mean": 0.068708,
+      "se": 0.002648,
+      "n": 8
+     },
+     "random": {
+      "mean": -0.007774,
+      "se": 0.004389,
+      "n": 8
+     }
+    }
+   },
+   "downstream_all_features": {
+    "mean": 0.132097,
+    "se": 0.004969,
+    "n": 8
+   },
+   "downstream_oracle_factors": {
+    "mean": 0.180556,
+    "se": 0.006796,
+    "n": 8
+   },
+   "ari": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 8
+   },
+   "valid_r2_all": {
+    "mean": 0.115839,
+    "se": 0.007727,
+    "n": 8
+   },
+   "found_clusters": {
+    "mean": 116.625,
+    "se": 4.55889,
+    "n": 8
+   },
+   "p": {
+    "mean": 249.0,
+    "se": 10.603234,
+    "n": 8
+   },
+   "n_groups": {
+    "mean": 116.625,
+    "se": 4.55889,
+    "n": 8
+   },
+   "n_noise_features": {
+    "mean": 186.75,
+    "se": 7.952426,
+    "n": 8
+   }
+  },
+  {
+   "rho": 0.7,
+   "noise_frac": 0.25,
+   "methods": {
+    "MDI": {
+     "rank_corr": {
+      "mean": 0.714085,
+      "se": 0.059879,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.452802,
+      "se": 0.03702,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.59375,
+      "se": 0.056645,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.015625,
+      "se": 0.015625,
+      "n": 8
+     }
+    },
+    "MDA": {
+     "rank_corr": {
+      "mean": 0.60031,
+      "se": 0.098354,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.357653,
+      "se": 0.065219,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.640625,
+      "se": 0.028323,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.0,
+      "se": 0.0,
+      "n": 8
+     }
+    },
+    "SHAP": {
+     "rank_corr": {
+      "mean": 0.651209,
+      "se": 0.054458,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.382607,
+      "se": 0.043649,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.578125,
+      "se": 0.040487,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.015625,
+      "se": 0.015625,
+      "n": 8
+     }
+    },
+    "cMDI": {
+     "rank_corr": {
+      "mean": 0.714085,
+      "se": 0.059879,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.852762,
+      "se": 0.033396,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.953125,
+      "se": 0.022873,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.046875,
+      "se": 0.022873,
+      "n": 8
+     }
+    },
+    "cMDA": {
+     "rank_corr": {
+      "mean": 0.769475,
+      "se": 0.050036,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.878733,
+      "se": 0.030956,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.9375,
+      "se": 0.023623,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.0625,
+      "se": 0.023623,
+      "n": 8
+     }
+    },
+    "cSHAP": {
+     "rank_corr": {
+      "mean": 0.616777,
+      "se": 0.041733,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.811819,
+      "se": 0.026618,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.953125,
+      "se": 0.022873,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.046875,
+      "se": 0.022873,
+      "n": 8
+     }
+    },
+    "MDA+dedupe": {
+     "recall_at_k": {
+      "mean": 0.921875,
+      "se": 0.022873,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.078125,
+      "se": 0.022873,
+      "n": 8
+     }
+    }
+   },
+   "downstream": {
+    "8": {
+     "MDI": {
+      "mean": 0.123827,
+      "se": 0.003547,
+      "n": 8
+     },
+     "MDA": {
+      "mean": 0.120435,
+      "se": 0.006402,
+      "n": 8
+     },
+     "SHAP": {
+      "mean": 0.12355,
+      "se": 0.003703,
+      "n": 8
+     },
+     "cMDI": {
+      "mean": 0.107826,
+      "se": 0.004538,
+      "n": 8
+     },
+     "cMDA": {
+      "mean": 0.105834,
+      "se": 0.003711,
+      "n": 8
+     },
+     "cSHAP": {
+      "mean": 0.105549,
+      "se": 0.004141,
+      "n": 8
+     },
+     "cMDA, cluster means": {
+      "mean": 0.160468,
+      "se": 0.003308,
+      "n": 8
+     },
+     "MDA+dedupe": {
+      "mean": 0.11599,
+      "se": 0.004913,
+      "n": 8
+     },
+     "random": {
+      "mean": 0.056474,
+      "se": 0.005287,
+      "n": 8
+     }
+    }
+   },
+   "downstream_all_features": {
+    "mean": 0.159706,
+    "se": 0.004031,
+    "n": 8
+   },
+   "downstream_oracle_factors": {
+    "mean": 0.175083,
+    "se": 0.005768,
+    "n": 8
+   },
+   "ari": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 8
+   },
+   "valid_r2_all": {
+    "mean": 0.158847,
+    "se": 0.008147,
+    "n": 8
+   },
+   "found_clusters": {
+    "mean": 24.125,
+    "se": 1.007782,
+    "n": 8
+   },
+   "p": {
+    "mean": 83.0,
+    "se": 3.570714,
+    "n": 8
+   },
+   "n_groups": {
+    "mean": 24.125,
+    "se": 1.007782,
+    "n": 8
+   },
+   "n_noise_features": {
+    "mean": 20.75,
+    "se": 0.920985,
+    "n": 8
+   }
+  },
+  {
+   "rho": 0.7,
+   "noise_frac": 0.5,
+   "methods": {
+    "MDI": {
+     "rank_corr": {
+      "mean": 0.637736,
+      "se": 0.064998,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.528893,
+      "se": 0.01764,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.515625,
+      "se": 0.028323,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.015625,
+      "se": 0.015625,
+      "n": 8
+     }
+    },
+    "MDA": {
+     "rank_corr": {
+      "mean": 0.753007,
+      "se": 0.04935,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.406648,
+      "se": 0.019001,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.578125,
+      "se": 0.032882,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.0,
+      "se": 0.0,
+      "n": 8
+     }
+    },
+    "SHAP": {
+     "rank_corr": {
+      "mean": 0.558393,
+      "se": 0.062924,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.487056,
+      "se": 0.013894,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.5625,
+      "se": 0.040916,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.0,
+      "se": 0.0,
+      "n": 8
+     }
+    },
+    "cMDI": {
+     "rank_corr": {
+      "mean": 0.637736,
+      "se": 0.064998,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.860982,
+      "se": 0.012854,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.921875,
+      "se": 0.032882,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.078125,
+      "se": 0.032882,
+      "n": 8
+     }
+    },
+    "cMDA": {
+     "rank_corr": {
+      "mean": 0.809895,
+      "se": 0.04252,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.889892,
+      "se": 0.007997,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.921875,
+      "se": 0.032882,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.078125,
+      "se": 0.032882,
+      "n": 8
+     }
+    },
+    "cSHAP": {
+     "rank_corr": {
+      "mean": 0.531447,
+      "se": 0.038138,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.851231,
+      "se": 0.013962,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.921875,
+      "se": 0.032882,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.078125,
+      "se": 0.032882,
+      "n": 8
+     }
+    },
+    "MDA+dedupe": {
+     "recall_at_k": {
+      "mean": 0.84375,
+      "se": 0.03125,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.15625,
+      "se": 0.03125,
+      "n": 8
+     }
+    }
+   },
+   "downstream": {
+    "8": {
+     "MDI": {
+      "mean": 0.121295,
+      "se": 0.003747,
+      "n": 8
+     },
+     "MDA": {
+      "mean": 0.118411,
+      "se": 0.006037,
+      "n": 8
+     },
+     "SHAP": {
+      "mean": 0.123811,
+      "se": 0.004769,
+      "n": 8
+     },
+     "cMDI": {
+      "mean": 0.103176,
+      "se": 0.003682,
+      "n": 8
+     },
+     "cMDA": {
+      "mean": 0.103151,
+      "se": 0.003208,
+      "n": 8
+     },
+     "cSHAP": {
+      "mean": 0.100796,
+      "se": 0.003486,
+      "n": 8
+     },
+     "cMDA, cluster means": {
+      "mean": 0.161557,
+      "se": 0.002855,
+      "n": 8
+     },
+     "MDA+dedupe": {
+      "mean": 0.114326,
+      "se": 0.00457,
+      "n": 8
+     },
+     "random": {
+      "mean": 0.035123,
+      "se": 0.00956,
+      "n": 8
+     }
+    }
+   },
+   "downstream_all_features": {
+    "mean": 0.153535,
+    "se": 0.003418,
+    "n": 8
+   },
+   "downstream_oracle_factors": {
+    "mean": 0.172861,
+    "se": 0.003764,
+    "n": 8
+   },
+   "ari": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 8
+   },
+   "valid_r2_all": {
+    "mean": 0.152244,
+    "se": 0.009192,
+    "n": 8
+   },
+   "found_clusters": {
+    "mean": 46.125,
+    "se": 2.2869,
+    "n": 8
+   },
+   "p": {
+    "mean": 124.5,
+    "se": 5.301617,
+    "n": 8
+   },
+   "n_groups": {
+    "mean": 46.125,
+    "se": 2.2869,
+    "n": 8
+   },
+   "n_noise_features": {
+    "mean": 62.25,
+    "se": 2.650809,
+    "n": 8
+   }
+  },
+  {
+   "rho": 0.7,
+   "noise_frac": 0.75,
+   "methods": {
+    "MDI": {
+     "rank_corr": {
+      "mean": 0.709594,
+      "se": 0.052289,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.474758,
+      "se": 0.018139,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.578125,
+      "se": 0.022873,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.0,
+      "se": 0.0,
+      "n": 8
+     }
+    },
+    "MDA": {
+     "rank_corr": {
+      "mean": 0.588334,
+      "se": 0.094882,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.348075,
+      "se": 0.022078,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.546875,
+      "se": 0.040487,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.015625,
+      "se": 0.015625,
+      "n": 8
+     }
+    },
+    "SHAP": {
+     "rank_corr": {
+      "mean": 0.558393,
+      "se": 0.054363,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.456898,
+      "se": 0.016204,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.578125,
+      "se": 0.032882,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.03125,
+      "se": 0.020458,
+      "n": 8
+     }
+    },
+    "cMDI": {
+     "rank_corr": {
+      "mean": 0.709594,
+      "se": 0.052289,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.727515,
+      "se": 0.004859,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.84375,
+      "se": 0.020458,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.15625,
+      "se": 0.020458,
+      "n": 8
+     }
+    },
+    "cMDA": {
+     "rank_corr": {
+      "mean": 0.687138,
+      "se": 0.052396,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.740847,
+      "se": 0.00648,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.890625,
+      "se": 0.028323,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.109375,
+      "se": 0.028323,
+      "n": 8
+     }
+    },
+    "cSHAP": {
+     "rank_corr": {
+      "mean": 0.567375,
+      "se": 0.052347,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.721791,
+      "se": 0.00865,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.875,
+      "se": 0.023623,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.125,
+      "se": 0.023623,
+      "n": 8
+     }
+    },
+    "MDA+dedupe": {
+     "recall_at_k": {
+      "mean": 0.765625,
+      "se": 0.028323,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.234375,
+      "se": 0.028323,
+      "n": 8
+     }
+    }
+   },
+   "downstream": {
+    "8": {
+     "MDI": {
+      "mean": 0.135745,
+      "se": 0.004992,
+      "n": 8
+     },
+     "MDA": {
+      "mean": 0.125895,
+      "se": 0.004041,
+      "n": 8
+     },
+     "SHAP": {
+      "mean": 0.132127,
+      "se": 0.005341,
+      "n": 8
+     },
+     "cMDI": {
+      "mean": 0.10404,
+      "se": 0.005752,
+      "n": 8
+     },
+     "cMDA": {
+      "mean": 0.10335,
+      "se": 0.003772,
+      "n": 8
+     },
+     "cSHAP": {
+      "mean": 0.102984,
+      "se": 0.005694,
+      "n": 8
+     },
+     "cMDA, cluster means": {
+      "mean": 0.160614,
+      "se": 0.006818,
+      "n": 8
+     },
+     "MDA+dedupe": {
+      "mean": 0.116291,
+      "se": 0.004612,
+      "n": 8
+     },
+     "random": {
+      "mean": 0.002111,
+      "se": 0.006214,
+      "n": 8
+     }
+    }
+   },
+   "downstream_all_features": {
+    "mean": 0.154933,
+    "se": 0.005885,
+    "n": 8
+   },
+   "downstream_oracle_factors": {
+    "mean": 0.180556,
+    "se": 0.006796,
+    "n": 8
+   },
+   "ari": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 8
+   },
+   "valid_r2_all": {
+    "mean": 0.135121,
+    "se": 0.008648,
+    "n": 8
+   },
+   "found_clusters": {
+    "mean": 116.625,
+    "se": 4.55889,
+    "n": 8
+   },
+   "p": {
+    "mean": 249.0,
+    "se": 10.603234,
+    "n": 8
+   },
+   "n_groups": {
+    "mean": 116.625,
+    "se": 4.55889,
+    "n": 8
+   },
+   "n_noise_features": {
+    "mean": 186.75,
+    "se": 7.952426,
+    "n": 8
+   }
+  },
+  {
+   "rho": 0.9,
+   "noise_frac": 0.25,
+   "methods": {
+    "MDI": {
+     "rank_corr": {
+      "mean": 0.797918,
+      "se": 0.049635,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.341576,
+      "se": 0.036581,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.625,
+      "se": 0.023623,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.015625,
+      "se": 0.015625,
+      "n": 8
+     }
+    },
+    "MDA": {
+     "rank_corr": {
+      "mean": 0.68115,
+      "se": 0.047445,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.307955,
+      "se": 0.052524,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.640625,
+      "se": 0.049762,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.03125,
+      "se": 0.020458,
+      "n": 8
+     }
+    },
+    "SHAP": {
+     "rank_corr": {
+      "mean": 0.724564,
+      "se": 0.044294,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.271462,
+      "se": 0.038403,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.640625,
+      "se": 0.028323,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.015625,
+      "se": 0.015625,
+      "n": 8
+     }
+    },
+    "cMDI": {
+     "rank_corr": {
+      "mean": 0.797918,
+      "se": 0.049635,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.884542,
+      "se": 0.030924,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.96875,
+      "se": 0.020458,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.03125,
+      "se": 0.020458,
+      "n": 8
+     }
+    },
+    "cMDA": {
+     "rank_corr": {
+      "mean": 0.790433,
+      "se": 0.0421,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.864533,
+      "se": 0.032732,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.921875,
+      "se": 0.032882,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.078125,
+      "se": 0.032882,
+      "n": 8
+     }
+    },
+    "cSHAP": {
+     "rank_corr": {
+      "mean": 0.649712,
+      "se": 0.043285,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.819341,
+      "se": 0.026807,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.9375,
+      "se": 0.023623,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.0625,
+      "se": 0.023623,
+      "n": 8
+     }
+    },
+    "MDA+dedupe": {
+     "recall_at_k": {
+      "mean": 0.875,
+      "se": 0.033408,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.125,
+      "se": 0.033408,
+      "n": 8
+     }
+    }
+   },
+   "downstream": {
+    "8": {
+     "MDI": {
+      "mean": 0.15989,
+      "se": 0.004681,
+      "n": 8
+     },
+     "MDA": {
+      "mean": 0.156055,
+      "se": 0.004763,
+      "n": 8
+     },
+     "SHAP": {
+      "mean": 0.157754,
+      "se": 0.004342,
+      "n": 8
+     },
+     "cMDI": {
+      "mean": 0.147829,
+      "se": 0.004215,
+      "n": 8
+     },
+     "cMDA": {
+      "mean": 0.145634,
+      "se": 0.004489,
+      "n": 8
+     },
+     "cSHAP": {
+      "mean": 0.142776,
+      "se": 0.004531,
+      "n": 8
+     },
+     "cMDA, cluster means": {
+      "mean": 0.168275,
+      "se": 0.006092,
+      "n": 8
+     },
+     "MDA+dedupe": {
+      "mean": 0.157175,
+      "se": 0.005059,
+      "n": 8
+     },
+     "random": {
+      "mean": 0.079175,
+      "se": 0.006621,
+      "n": 8
+     }
+    }
+   },
+   "downstream_all_features": {
+    "mean": 0.182325,
+    "se": 0.004016,
+    "n": 8
+   },
+   "downstream_oracle_factors": {
+    "mean": 0.175083,
+    "se": 0.005768,
+    "n": 8
+   },
+   "ari": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 8
+   },
+   "valid_r2_all": {
+    "mean": 0.185656,
+    "se": 0.008281,
+    "n": 8
+   },
+   "found_clusters": {
+    "mean": 24.125,
+    "se": 1.007782,
+    "n": 8
+   },
+   "p": {
+    "mean": 83.0,
+    "se": 3.570714,
+    "n": 8
+   },
+   "n_groups": {
+    "mean": 24.125,
+    "se": 1.007782,
+    "n": 8
+   },
+   "n_noise_features": {
+    "mean": 20.75,
+    "se": 0.920985,
+    "n": 8
+   }
+  },
+  {
+   "rho": 0.9,
+   "noise_frac": 0.5,
+   "methods": {
+    "MDI": {
+     "rank_corr": {
+      "mean": 0.715582,
+      "se": 0.044797,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.474438,
+      "se": 0.016702,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.640625,
+      "se": 0.028323,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.0,
+      "se": 0.0,
+      "n": 8
+     }
+    },
+    "MDA": {
+     "rank_corr": {
+      "mean": 0.663185,
+      "se": 0.0577,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.337164,
+      "se": 0.027559,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.609375,
+      "se": 0.028323,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.0,
+      "se": 0.0,
+      "n": 8
+     }
+    },
+    "SHAP": {
+     "rank_corr": {
+      "mean": 0.678156,
+      "se": 0.049635,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.454605,
+      "se": 0.020712,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.625,
+      "se": 0.023623,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.015625,
+      "se": 0.015625,
+      "n": 8
+     }
+    },
+    "cMDI": {
+     "rank_corr": {
+      "mean": 0.715582,
+      "se": 0.044797,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.88568,
+      "se": 0.005858,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.9375,
+      "se": 0.023623,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.0625,
+      "se": 0.023623,
+      "n": 8
+     }
+    },
+    "cMDA": {
+     "rank_corr": {
+      "mean": 0.770972,
+      "se": 0.053028,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.866601,
+      "se": 0.022329,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.921875,
+      "se": 0.040487,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.078125,
+      "se": 0.040487,
+      "n": 8
+     }
+    },
+    "cSHAP": {
+     "rank_corr": {
+      "mean": 0.591328,
+      "se": 0.06022,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.870792,
+      "se": 0.009611,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.890625,
+      "se": 0.028323,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.109375,
+      "se": 0.028323,
+      "n": 8
+     }
+    },
+    "MDA+dedupe": {
+     "recall_at_k": {
+      "mean": 0.875,
+      "se": 0.033408,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.125,
+      "se": 0.033408,
+      "n": 8
+     }
+    }
+   },
+   "downstream": {
+    "8": {
+     "MDI": {
+      "mean": 0.157585,
+      "se": 0.003776,
+      "n": 8
+     },
+     "MDA": {
+      "mean": 0.152528,
+      "se": 0.002921,
+      "n": 8
+     },
+     "SHAP": {
+      "mean": 0.155361,
+      "se": 0.004302,
+      "n": 8
+     },
+     "cMDI": {
+      "mean": 0.149062,
+      "se": 0.003874,
+      "n": 8
+     },
+     "cMDA": {
+      "mean": 0.146368,
+      "se": 0.003573,
+      "n": 8
+     },
+     "cSHAP": {
+      "mean": 0.143616,
+      "se": 0.004243,
+      "n": 8
+     },
+     "cMDA, cluster means": {
+      "mean": 0.167379,
+      "se": 0.004269,
+      "n": 8
+     },
+     "MDA+dedupe": {
+      "mean": 0.157351,
+      "se": 0.004727,
+      "n": 8
+     },
+     "random": {
+      "mean": 0.049521,
+      "se": 0.011221,
+      "n": 8
+     }
+    }
+   },
+   "downstream_all_features": {
+    "mean": 0.176173,
+    "se": 0.003693,
+    "n": 8
+   },
+   "downstream_oracle_factors": {
+    "mean": 0.172861,
+    "se": 0.003764,
+    "n": 8
+   },
+   "ari": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 8
+   },
+   "valid_r2_all": {
+    "mean": 0.172879,
+    "se": 0.011856,
+    "n": 8
+   },
+   "found_clusters": {
+    "mean": 46.125,
+    "se": 2.2869,
+    "n": 8
+   },
+   "p": {
+    "mean": 124.5,
+    "se": 5.301617,
+    "n": 8
+   },
+   "n_groups": {
+    "mean": 46.125,
+    "se": 2.2869,
+    "n": 8
+   },
+   "n_noise_features": {
+    "mean": 62.25,
+    "se": 2.650809,
+    "n": 8
+   }
+  },
+  {
+   "rho": 0.9,
+   "noise_frac": 0.75,
+   "methods": {
+    "MDI": {
+     "rank_corr": {
+      "mean": 0.758995,
+      "se": 0.043355,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.457681,
+      "se": 0.017345,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.59375,
+      "se": 0.03125,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.0,
+      "se": 0.0,
+      "n": 8
+     }
+    },
+    "MDA": {
+     "rank_corr": {
+      "mean": 0.627256,
+      "se": 0.065711,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.318268,
+      "se": 0.017316,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.640625,
+      "se": 0.043798,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.046875,
+      "se": 0.032882,
+      "n": 8
+     }
+    },
+    "SHAP": {
+     "rank_corr": {
+      "mean": 0.715581,
+      "se": 0.056752,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.443676,
+      "se": 0.019027,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.625,
+      "se": 0.023623,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.03125,
+      "se": 0.020458,
+      "n": 8
+     }
+    },
+    "cMDI": {
+     "rank_corr": {
+      "mean": 0.758995,
+      "se": 0.043355,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.745308,
+      "se": 0.003833,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.921875,
+      "se": 0.022873,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.078125,
+      "se": 0.022873,
+      "n": 8
+     }
+    },
+    "cMDA": {
+     "rank_corr": {
+      "mean": 0.767978,
+      "se": 0.064749,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.708854,
+      "se": 0.033209,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.90625,
+      "se": 0.039174,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.09375,
+      "se": 0.039174,
+      "n": 8
+     }
+    },
+    "cSHAP": {
+     "rank_corr": {
+      "mean": 0.621269,
+      "se": 0.044722,
+      "n": 8
+     },
+     "feature_rank_corr": {
+      "mean": 0.738116,
+      "se": 0.004884,
+      "n": 8
+     },
+     "recall_at_k": {
+      "mean": 0.859375,
+      "se": 0.028323,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.140625,
+      "se": 0.028323,
+      "n": 8
+     }
+    },
+    "MDA+dedupe": {
+     "recall_at_k": {
+      "mean": 0.828125,
+      "se": 0.040487,
+      "n": 8
+     },
+     "noise_fdr_at_k": {
+      "mean": 0.171875,
+      "se": 0.040487,
+      "n": 8
+     }
+    }
+   },
+   "downstream": {
+    "8": {
+     "MDI": {
+      "mean": 0.168873,
+      "se": 0.004265,
+      "n": 8
+     },
+     "MDA": {
+      "mean": 0.172348,
+      "se": 0.004914,
+      "n": 8
+     },
+     "SHAP": {
+      "mean": 0.165244,
+      "se": 0.004408,
+      "n": 8
+     },
+     "cMDI": {
+      "mean": 0.151815,
+      "se": 0.006418,
+      "n": 8
+     },
+     "cMDA": {
+      "mean": 0.152066,
+      "se": 0.004168,
+      "n": 8
+     },
+     "cSHAP": {
+      "mean": 0.138015,
+      "se": 0.005871,
+      "n": 8
+     },
+     "cMDA, cluster means": {
+      "mean": 0.176765,
+      "se": 0.003685,
+      "n": 8
+     },
+     "MDA+dedupe": {
+      "mean": 0.172983,
+      "se": 0.003262,
+      "n": 8
+     },
+     "random": {
+      "mean": 0.01068,
+      "se": 0.008519,
+      "n": 8
+     }
+    }
+   },
+   "downstream_all_features": {
+    "mean": 0.181725,
+    "se": 0.005071,
+    "n": 8
+   },
+   "downstream_oracle_factors": {
+    "mean": 0.180556,
+    "se": 0.006796,
+    "n": 8
+   },
+   "ari": {
+    "mean": 1.0,
+    "se": 0.0,
+    "n": 8
+   },
+   "valid_r2_all": {
+    "mean": 0.159652,
+    "se": 0.008373,
+    "n": 8
+   },
+   "found_clusters": {
+    "mean": 116.625,
+    "se": 4.55889,
+    "n": 8
+   },
+   "p": {
+    "mean": 249.0,
+    "se": 10.603234,
+    "n": 8
+   },
+   "n_groups": {
+    "mean": 116.625,
+    "se": 4.55889,
+    "n": 8
+   },
+   "n_noise_features": {
+    "mean": 186.75,
+    "se": 7.952426,
+    "n": 8
+   }
+  }
+ ]
+}

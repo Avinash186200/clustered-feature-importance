@@ -1,0 +1,585 @@
+{
+ "cell": {
+  "rho": 0.7,
+  "noise_frac": 0.5
+ },
+ "heldout_seeds": [
+  101,
+  102,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108
+ ],
+ "k": 8,
+ "budgets": [
+  4,
+  8
+ ],
+ "n_boot": 4,
+ "n_random": 3,
+ "n_repeats": 3,
+ "generator": {
+  "betas": [
+   1.0,
+   0.85,
+   0.7,
+   0.55,
+   0.4,
+   0.25
+  ],
+  "interaction": true,
+  "gamma": 1.0,
+  "copies": [
+   2,
+   12
+  ],
+  "rho": 0.7,
+  "n_combo": 8,
+  "noise_frac": 0.5,
+  "noise_clustered_share": 0.5,
+  "noise_cluster_size": [
+   2,
+   12
+  ],
+  "r2_latent": 0.25
+ },
+ "methods": {
+  "MDI": {
+   "rank_corr": {
+    "mean": 0.637736,
+    "se": 0.064998,
+    "n": 8
+   },
+   "feature_rank_corr": {
+    "mean": 0.528893,
+    "se": 0.01764,
+    "n": 8
+   },
+   "recall_at_k": {
+    "mean": 0.515625,
+    "se": 0.028323,
+    "n": 8
+   },
+   "noise_fdr_at_k": {
+    "mean": 0.015625,
+    "se": 0.015625,
+    "n": 8
+   }
+  },
+  "MDA": {
+   "rank_corr": {
+    "mean": 0.753007,
+    "se": 0.04935,
+    "n": 8
+   },
+   "feature_rank_corr": {
+    "mean": 0.406648,
+    "se": 0.019001,
+    "n": 8
+   },
+   "recall_at_k": {
+    "mean": 0.578125,
+    "se": 0.032882,
+    "n": 8
+   },
+   "noise_fdr_at_k": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 8
+   }
+  },
+  "SHAP": {
+   "rank_corr": {
+    "mean": 0.558393,
+    "se": 0.062924,
+    "n": 8
+   },
+   "feature_rank_corr": {
+    "mean": 0.487056,
+    "se": 0.013894,
+    "n": 8
+   },
+   "recall_at_k": {
+    "mean": 0.5625,
+    "se": 0.040916,
+    "n": 8
+   },
+   "noise_fdr_at_k": {
+    "mean": 0.0,
+    "se": 0.0,
+    "n": 8
+   }
+  },
+  "cMDI": {
+   "rank_corr": {
+    "mean": 0.637736,
+    "se": 0.064998,
+    "n": 8
+   },
+   "feature_rank_corr": {
+    "mean": 0.860982,
+    "se": 0.012854,
+    "n": 8
+   },
+   "recall_at_k": {
+    "mean": 0.921875,
+    "se": 0.032882,
+    "n": 8
+   },
+   "noise_fdr_at_k": {
+    "mean": 0.078125,
+    "se": 0.032882,
+    "n": 8
+   }
+  },
+  "cMDA": {
+   "rank_corr": {
+    "mean": 0.809895,
+    "se": 0.04252,
+    "n": 8
+   },
+   "feature_rank_corr": {
+    "mean": 0.889892,
+    "se": 0.007997,
+    "n": 8
+   },
+   "recall_at_k": {
+    "mean": 0.921875,
+    "se": 0.032882,
+    "n": 8
+   },
+   "noise_fdr_at_k": {
+    "mean": 0.078125,
+    "se": 0.032882,
+    "n": 8
+   }
+  },
+  "cSHAP": {
+   "rank_corr": {
+    "mean": 0.531447,
+    "se": 0.038138,
+    "n": 8
+   },
+   "feature_rank_corr": {
+    "mean": 0.851231,
+    "se": 0.013962,
+    "n": 8
+   },
+   "recall_at_k": {
+    "mean": 0.921875,
+    "se": 0.032882,
+    "n": 8
+   },
+   "noise_fdr_at_k": {
+    "mean": 0.078125,
+    "se": 0.032882,
+    "n": 8
+   }
+  },
+  "drop-column": {
+   "rank_corr": {
+    "mean": 0.229046,
+    "se": 0.117025,
+    "n": 8
+   },
+   "feature_rank_corr": {
+    "mean": 0.085415,
+    "se": 0.024435,
+    "n": 8
+   },
+   "recall_at_k": {
+    "mean": 0.4375,
+    "se": 0.047246,
+    "n": 8
+   },
+   "noise_fdr_at_k": {
+    "mean": 0.46875,
+    "se": 0.073762,
+    "n": 8
+   }
+  },
+  "MDA+dedupe": {
+   "recall_at_k": {
+    "mean": 0.84375,
+    "se": 0.03125,
+    "n": 8
+   },
+   "noise_fdr_at_k": {
+    "mean": 0.15625,
+    "se": 0.03125,
+    "n": 8
+   }
+  }
+ },
+ "downstream": {
+  "4": {
+   "MDI": {
+    "mean": 0.102149,
+    "se": 0.005164,
+    "n": 8
+   },
+   "MDA": {
+    "mean": 0.087144,
+    "se": 0.008181,
+    "n": 8
+   },
+   "SHAP": {
+    "mean": 0.095966,
+    "se": 0.004353,
+    "n": 8
+   },
+   "cMDI": {
+    "mean": 0.078635,
+    "se": 0.002877,
+    "n": 8
+   },
+   "cMDA": {
+    "mean": 0.076059,
+    "se": 0.004236,
+    "n": 8
+   },
+   "cSHAP": {
+    "mean": 0.086373,
+    "se": 0.002969,
+    "n": 8
+   },
+   "drop-column": {
+    "mean": 0.02457,
+    "se": 0.013745,
+    "n": 8
+   },
+   "cMDA, cluster means": {
+    "mean": 0.119177,
+    "se": 0.001855,
+    "n": 8
+   },
+   "MDA+dedupe": {
+    "mean": 0.094645,
+    "se": 0.006306,
+    "n": 8
+   },
+   "random": {
+    "mean": 0.012531,
+    "se": 0.003585,
+    "n": 8
+   }
+  },
+  "8": {
+   "MDI": {
+    "mean": 0.121295,
+    "se": 0.003747,
+    "n": 8
+   },
+   "MDA": {
+    "mean": 0.118411,
+    "se": 0.006037,
+    "n": 8
+   },
+   "SHAP": {
+    "mean": 0.123811,
+    "se": 0.004769,
+    "n": 8
+   },
+   "cMDI": {
+    "mean": 0.103176,
+    "se": 0.003682,
+    "n": 8
+   },
+   "cMDA": {
+    "mean": 0.103151,
+    "se": 0.003208,
+    "n": 8
+   },
+   "cSHAP": {
+    "mean": 0.100796,
+    "se": 0.003486,
+    "n": 8
+   },
+   "drop-column": {
+    "mean": 0.050726,
+    "se": 0.011337,
+    "n": 8
+   },
+   "cMDA, cluster means": {
+    "mean": 0.161557,
+    "se": 0.002855,
+    "n": 8
+   },
+   "MDA+dedupe": {
+    "mean": 0.114326,
+    "se": 0.00457,
+    "n": 8
+   },
+   "random": {
+    "mean": 0.035123,
+    "se": 0.00956,
+    "n": 8
+   }
+  }
+ },
+ "downstream_all_features": {
+  "mean": 0.153535,
+  "se": 0.003418,
+  "n": 8
+ },
+ "downstream_oracle_factors": {
+  "mean": 0.172861,
+  "se": 0.003764,
+  "n": 8
+ },
+ "ari": {
+  "mean": 1.0,
+  "se": 0.0,
+  "n": 8
+ },
+ "valid_r2_all": {
+  "mean": 0.152244,
+  "se": 0.009192,
+  "n": 8
+ },
+ "found_clusters": {
+  "mean": 46.125,
+  "se": 2.2869,
+  "n": 8
+ },
+ "p": {
+  "mean": 124.5,
+  "se": 5.301617,
+  "n": 8
+ },
+ "n_groups": {
+  "mean": 46.125,
+  "se": 2.2869,
+  "n": 8
+ },
+ "n_noise_features": {
+  "mean": 62.25,
+  "se": 2.650809,
+  "n": 8
+ },
+ "stability": {
+  "MDI": {
+   "spearman": {
+    "mean": 0.426617,
+    "se": 0.024451,
+    "n": 8
+   },
+   "jaccard": {
+    "mean": 0.354606,
+    "se": 0.031541,
+    "n": 8
+   },
+   "group_jaccard": {
+    "mean": 0.628224,
+    "se": 0.03966,
+    "n": 8
+   }
+  },
+  "MDA": {
+   "spearman": {
+    "mean": 0.347202,
+    "se": 0.020157,
+    "n": 8
+   },
+   "jaccard": {
+    "mean": 0.382786,
+    "se": 0.04389,
+    "n": 8
+   },
+   "group_jaccard": {
+    "mean": 0.574206,
+    "se": 0.036008,
+    "n": 8
+   }
+  },
+  "SHAP": {
+   "spearman": {
+    "mean": 0.44798,
+    "se": 0.021137,
+    "n": 8
+   },
+   "jaccard": {
+    "mean": 0.34364,
+    "se": 0.025994,
+    "n": 8
+   },
+   "group_jaccard": {
+    "mean": 0.616617,
+    "se": 0.029273,
+    "n": 8
+   }
+  },
+  "cMDI": {
+   "spearman": {
+    "mean": 0.924288,
+    "se": 0.007239,
+    "n": 8
+   },
+   "jaccard": {
+    "mean": 0.226021,
+    "se": 0.022822,
+    "n": 8
+   },
+   "group_jaccard": {
+    "mean": 0.784259,
+    "se": 0.020925,
+    "n": 8
+   }
+  },
+  "cMDA": {
+   "spearman": {
+    "mean": 0.819661,
+    "se": 0.014864,
+    "n": 8
+   },
+   "jaccard": {
+    "mean": 0.235384,
+    "se": 0.022441,
+    "n": 8
+   },
+   "group_jaccard": {
+    "mean": 0.781482,
+    "se": 0.034546,
+    "n": 8
+   }
+  },
+  "cSHAP": {
+   "spearman": {
+    "mean": 0.906586,
+    "se": 0.007236,
+    "n": 8
+   },
+   "jaccard": {
+    "mean": 0.216697,
+    "se": 0.019952,
+    "n": 8
+   },
+   "group_jaccard": {
+    "mean": 0.744192,
+    "se": 0.031367,
+    "n": 8
+   }
+  }
+ },
+ "paired_test_r2_at_k": [
+  {
+   "a": "cMDA, cluster means",
+   "b": "all features",
+   "diff": {
+    "mean": 0.008023,
+    "se": 0.00136,
+    "n": 8
+   },
+   "a_wins": 8,
+   "n": 8
+  },
+  {
+   "a": "cMDA, cluster means",
+   "b": "MDI",
+   "diff": {
+    "mean": 0.040263,
+    "se": 0.001399,
+    "n": 8
+   },
+   "a_wins": 8,
+   "n": 8
+  },
+  {
+   "a": "cMDA, cluster means",
+   "b": "SHAP",
+   "diff": {
+    "mean": 0.037747,
+    "se": 0.002471,
+    "n": 8
+   },
+   "a_wins": 8,
+   "n": 8
+  },
+  {
+   "a": "cMDA",
+   "b": "MDA",
+   "diff": {
+    "mean": -0.01526,
+    "se": 0.004993,
+    "n": 8
+   },
+   "a_wins": 1,
+   "n": 8
+  },
+  {
+   "a": "MDI",
+   "b": "cMDI",
+   "diff": {
+    "mean": 0.018118,
+    "se": 0.002327,
+    "n": 8
+   },
+   "a_wins": 8,
+   "n": 8
+  },
+  {
+   "a": "MDA+dedupe",
+   "b": "MDA",
+   "diff": {
+    "mean": -0.004085,
+    "se": 0.004618,
+    "n": 8
+   },
+   "a_wins": 1,
+   "n": 8
+  }
+ ],
+ "per_seed": [
+  {
+   "seed": 101,
+   "p": 132,
+   "found_clusters": 47,
+   "ari": 1.0
+  },
+  {
+   "seed": 102,
+   "p": 114,
+   "found_clusters": 42,
+   "ari": 1.0
+  },
+  {
+   "seed": 103,
+   "p": 116,
+   "found_clusters": 42,
+   "ari": 1.0
+  },
+  {
+   "seed": 104,
+   "p": 114,
+   "found_clusters": 41,
+   "ari": 1.0
+  },
+  {
+   "seed": 105,
+   "p": 148,
+   "found_clusters": 57,
+   "ari": 1.0
+  },
+  {
+   "seed": 106,
+   "p": 120,
+   "found_clusters": 47,
+   "ari": 1.0
+  },
+  {
+   "seed": 107,
+   "p": 144,
+   "found_clusters": 54,
+   "ari": 1.0
+  },
+  {
+   "seed": 108,
+   "p": 108,
+   "found_clusters": 39,
+   "ari": 1.0
+  }
+ ]
+}
